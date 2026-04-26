@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meadow Run</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="game">
+      <canvas id="world" tabindex="0" aria-label="Peaceful horse exploration game"></canvas>
+      <section class="hud hud-top" aria-label="Status">
+        <div>
+          <strong>Meadow Run</strong>
+          <span id="region">Sage Hills</span>
+        </div>
+        <div class="meter" aria-label="Horse stamina">
+          <span id="stamina"></span>
+        </div>
+      </section>
+      <section class="hud hud-bottom" aria-label="Controls">
+        <span>WASD / arrows ride</span>
+        <span>C / B capture</span>
+        <span>Sticks ride/camera</span>
+        <span>E care / F feed</span>
+      </section>
+      <div id="interaction" aria-live="polite"></div>
+      <div id="controller" aria-live="polite">Click Ride, then press a controller button</div>
+      <button id="start" type="button">Ride</button>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

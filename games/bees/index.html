@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bee Garden</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hud" aria-label="Game status">
+        <div>
+          <span class="label">Bee Garden</span>
+          <strong>Prototype</strong>
+        </div>
+        <div>
+          <span class="label">Flowers</span>
+          <strong id="visitedCount">0 / 0</strong>
+        </div>
+        <div>
+          <span class="label">Nectar</span>
+          <strong id="nectarCount">0</strong>
+        </div>
+        <div>
+          <span class="label">Honey</span>
+          <strong id="honeyCount">0</strong>
+        </div>
+        <div>
+          <span class="label">Pollen</span>
+          <strong id="pollenCount">0 / 2</strong>
+        </div>
+        <div>
+          <span class="label">Pollination</span>
+          <strong id="pollinationScore">0</strong>
+        </div>
+      </section>
+
+      <canvas id="gameCanvas" width="960" height="640" aria-label="Top-down bee garden game"></canvas>
+
+      <section class="controls" aria-label="Controls">
+        <span>Move: WASD or arrows</span>
+        <span>Dash: Space</span>
+        <span>Nectar cap: 20</span>
+        <span>Two pollens create a blended flower</span>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
